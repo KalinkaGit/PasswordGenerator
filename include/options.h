@@ -12,6 +12,9 @@
 #ifndef OPTIONS_H
     #define OPTIONS_H
 
+    /* SYSTEM INCLUDES */
+    #include <stdbool.h>
+
     /**
      * @brief Options first bitfield.
      */
@@ -43,14 +46,43 @@
     } options_bitfield2_t;
 
     /**
+     * @brief Complexity options.
+     */
+    typedef enum {
+        COMPLEXITY_NONE = 0, /**< No complexity. */
+        COMPLEXITY_LOW = 1, /**< Low complexity. */
+        COMPLEXITY_MEDIUM = 2, /**< Medium complexity. */
+        COMPLEXITY_HIGH = 3, /**< High complexity. */
+        COMPLEXITY_007 = 4, /**< 007 complexity. */
+    } complexity_t;
+
+    /**
+     * @brief Structure for files.
+     */
+    typedef struct {
+        char *save_file; /**< Save file. */
+        char *passphrase_file; /**< Passphrase file. */
+    } files_t;
+
+    /**
+     * @brief Structure for options lists.
+     */
+    typedef struct {
+        char *special; /**< Special characters to use. */
+        char *numbers; /**< Numbers to use. */
+        char *alphabet; /**< Alphabet to use. */
+    } list_t;
+
+    /**
      * @brief Structure for options.
      */
     typedef struct {
         options_bitfield_t bitfield; /**< Bitfield of options. */
-
         int length; /**< Length of the password. */
-        int complexity; /**< Complexity of the password. */
-        int repeat; /**< Number of passwords to generate. */
+        list_t list; /**< Lists for options. */
+        complexity_t complexity; /**< Complexity option. */
+        int passphrase; /**< Passphrase number of words. */
+        files_t files; /**< Files to use. */
     } options_t;
 
 #endif /* OPTIONS_H */

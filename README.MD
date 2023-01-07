@@ -38,10 +38,10 @@ See the options section or use `./gen_pass -h` / `./gen_pass --help` to display 
 -a, --alphabet [list]
     Generate a password with the specified alphabet.
     Default is abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.
--u, --uppercase [true|false]
+-u, --uppercase
     Generate a password with uppercase letters.
     Default is true.
--r, --repeat [true|false]
+-r, --repeat
     Generate a password with repeating characters.
     Default is false.
 -c, --complexity [low|medium|high|veryhigh|007]
@@ -64,6 +64,7 @@ See the options section or use `./gen_pass -h` / `./gen_pass --help` to display 
     https://xkcd.com/936/
 -w, --words [file]
     Use the specified file as a word list.
+    Needed for -p option.
 -q, --quiet
     Do not display the generated password.
     Only works with -k and/or -s options.
