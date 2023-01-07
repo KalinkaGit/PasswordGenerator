@@ -19,7 +19,7 @@
      * @param argv Arguments.
      * @return int 0 if handling was successful, -1 otherwise.
      */
-    int handle_arguments(int argc, char *argv[]);
+    int handle_args(int argc, char *argv[]);
 
     /**
      * @brief Handle errors of the program.

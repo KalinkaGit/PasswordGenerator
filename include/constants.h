@@ -12,6 +12,12 @@
 #ifndef CONSTANTS_H
     #define CONSTANTS_H
 
+    /* MACROS */
+    #define PROGRAM_NAME "gen_pass"
+
+    #define ERROR_MSG_MALLOC "./" PROGRAM_NAME ": Failed to allocate memory."
+    #define ERROR_MSG_INVALID_OPTION(_opt) "./" PROGRAM_NAME ": invalid option -- '" _opt "'\nTry './" PROGRAM_NAME " --help' for more information.\n"
+
     /**
      * @brief Program exit codes.
      */
