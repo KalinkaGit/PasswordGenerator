@@ -1,0 +1,8 @@
+# Editor files
+.vscode/
+.cache/
+compile_commands.json
+
+# Binaries
+build/
+gen_pass

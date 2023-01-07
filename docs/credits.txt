@@ -1,0 +1,11 @@
+credits
+
+Program developed by:
+    Rémi 'Kalinka' Grimault (https://github.com/KalinkaGit)
+
+Libraries used:
+    - glibc
+      Copyright (C) 1991-2021 Free Software Foundation, Inc.
+    
+This program is licensed under the MIT License. For more information, 
+please see the LICENSE file.
