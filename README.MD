@@ -1,6 +1,6 @@
 # Password Generator
 
-Work in progress
+Work in progress<br/>
 This project is free software under the MIT license. You can use, modify, and redistribute this software according to the terms of the MIT license as described in the `LICENSE` file.
 
 ## Prerequisites
